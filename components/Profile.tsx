@@ -394,7 +394,7 @@ const Profile: React.FC<ProfileProps> = ({ user, onChangeAvatar, onThemeChange, 
                 onClick={() => setShowLogoutConfirm(true)}
                 className="w-full py-4 bg-white text-cermat-red rounded-2xl font-bold uppercase tracking-widest text-lg shadow-sm border-2 border-cermat-red hover:bg-red-50 transition-all active:scale-95"
             >
-                Odhlásit se
+                ODHLÁSIT
             </button>
         </div>
 
@@ -423,8 +423,12 @@ const Profile: React.FC<ProfileProps> = ({ user, onChangeAvatar, onThemeChange, 
                         </div>
                     </div>
 
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Vyber si avatara</h3>
-                    <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="flex justify-between items-center mb-3">
+                        <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">Tvoji Avataři</h3>
+                        <span className="text-[10px] font-bold bg-blue-100 text-blue-600 px-2 py-0.5 rounded">SBÍRKA</span>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-3 mb-6 bg-gray-50 p-2 rounded-xl border border-gray-100">
                         {avatars.map((av) => {
                             const isUnlocked = user.streak >= av.unlockDay;
                             const isSelected = user.avatar === av.id;
