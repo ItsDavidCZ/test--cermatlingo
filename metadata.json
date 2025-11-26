@@ -1,0 +1,5 @@
+{
+  "name": "CermatLingo",
+  "description": "Aplikace pro přípravu na přijímací zkoušky CERMAT (Čeština a Matematika) ve stylu Duolingo. Využívá AI pro generování nekonečného množství procvičovacích úloh.",
+  "requestFramePermissions": []
+}
